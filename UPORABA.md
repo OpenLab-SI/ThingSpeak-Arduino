@@ -2,7 +2,7 @@
 
 Knjižnica za enostavno komunikacijo s ThingSpeak strežniki.
 
-## Features
+## Zmogljivosti
 
   - Kanali
     - Posodabljanje kanalov
