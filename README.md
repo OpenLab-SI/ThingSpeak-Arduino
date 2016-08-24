@@ -88,3 +88,11 @@ String command = client.nextCommand();
 ```
 
 Fetches/executes the next TalkBack command.
+
+### addCommand
+
+```cpp
+client.addCommand(String command);
+```
+
+Sends/adds a new TalkBack command.

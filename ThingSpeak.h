@@ -30,7 +30,9 @@ class ThingSpeak
     void _setField(String field, String value);
 
     void update();
+
     String nextCommand();
+    void addCommand(String command);
 
   private:
     String _address;

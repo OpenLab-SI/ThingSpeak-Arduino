@@ -135,6 +135,16 @@ String ThingSpeak::nextCommand()
   return _send(location, data);
 }
 
+// Sends a new TalkBack command
+
+void ThingSpeak::addCommand(String command)
+{
+  String location = "/talkbacks/" + _talkBackId + "/commands";
+  String data = "api_key=" + _talkBackKey + "&command_string=" + command;
+
+  _send(location, data);
+}
+
 // Makes a new POST request to ThingSpeak
 
 String ThingSpeak::_send(String location, String data)

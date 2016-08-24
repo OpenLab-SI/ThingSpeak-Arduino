@@ -89,3 +89,11 @@ String ukaz = klient.nextCommand();
 ```
 
 Prenese oz. izvede naslednji TalkBack ukaz.
+
+### addCommand
+
+```cpp
+klient.addCommand(String ukaz);
+```
+
+Pošlje oz. doda nov TalkBack ukaz.
