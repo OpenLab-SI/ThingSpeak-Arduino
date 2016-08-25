@@ -34,6 +34,13 @@ void ThingSpeak::setTalkBack(String id, String key)
   _talkBackKey = key;
 }
 
+// Sets the ThingTweet API KEY
+
+void ThingSpeak::setThingTweet(String key)
+{
+  _thingTweetKey = key;
+}
+
 // Adds a custom field name (order is important!)
 // A max of 8 field names can be defined
 
@@ -141,6 +148,16 @@ void ThingSpeak::addCommand(String command)
 {
   String location = "/talkbacks/" + _talkBackId + "/commands";
   String data = "api_key=" + _talkBackKey + "&command_string=" + command;
+
+  _send(location, data);
+}
+
+// Tweets a new status update
+
+void ThingSpeak::tweet(String status)
+{
+  String location = "/apps/thingtweet/1/statuses/update";
+  String data = "api_key=" + _thingTweetKey + "&status=" + status;
 
   _send(location, data);
 }

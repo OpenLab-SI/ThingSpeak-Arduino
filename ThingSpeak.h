@@ -14,6 +14,7 @@ class ThingSpeak
     void setChannel(String key);
     void setTalkBack(int id, String key);
     void setTalkBack(String id, String key);
+    void setThingTweet(String key);
 
     void addField(String name);
 
@@ -34,6 +35,8 @@ class ThingSpeak
     String nextCommand();
     void addCommand(String command);
 
+    void tweet(String status);
+
   private:
     String _address;
 
@@ -45,6 +48,7 @@ class ThingSpeak
     String _channelKey;
     String _talkBackId;
     String _talkBackKey;
+    String _thingTweetKey;
 
     String _send(String location, String data);
 };

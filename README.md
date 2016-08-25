@@ -45,6 +45,14 @@ client.setTalkBack(String id, String key);
 
 Sets the TalkBack ID and API key.
 
+### setThingTweet
+
+```cpp
+client.setThingTweet(String key);
+```
+
+Sets the ThingTweet API key.
+
 ### addField
 
 ```cpp
@@ -96,3 +104,11 @@ client.addCommand(String command);
 ```
 
 Sends/adds a new TalkBack command.
+
+### tweet
+
+```cpp
+client.tweet(String status);
+```
+
+Posts a new status update on Twitter.

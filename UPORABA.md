@@ -45,6 +45,14 @@ klient.setTalkBack(String id, String kljuc);
 
 Nastavi ID in API ključ TalkBack-a.
 
+### setThingTweet
+
+```cpp
+klient.setThingTweet(String kljuc);
+```
+
+Nastavi API ključ za ThingTweet.
+
 ### addField
 
 ```cpp
@@ -97,3 +105,11 @@ klient.addCommand(String ukaz);
 ```
 
 Pošlje oz. doda nov TalkBack ukaz.
+
+### tweet
+
+```cpp
+klient.tweet(String status);
+```
+
+Objavi novo stanje na Twitterju.
